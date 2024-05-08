@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Light source shadow (Top-Left) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFFFF"/> <!-- White background for contrast -->
+            <corners android:radius="12dp"/> <!-- Rounded corners for a soft edge -->
+            <padding
+                android:bottom="3dp"
+                android:right="3dp"/> <!-- Offset for depth -->
+        </shape>
+    </item>
+
+    <!-- Dark source shadow (Bottom-Right) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFDDDDDD"/> <!-- Slightly darker background for depth shadow -->
+            <corners android:radius="12dp"/> <!-- Consistent rounded corners -->
+            <padding
+                android:top="3dp"
+                android:left="3dp"/> <!-- Opposite offset for depth -->
+        </shape>
+    </item>
+
+    <!-- Card background (neutral middle layer to smooth out shadows) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#CEFFFFFF"/> <!-- Neutral card color, adjust as needed -->
+            <corners android:radius="12dp"/> <!-- Rounded corners for a soft edge -->
+        </shape>
+    </item>
+
+</layer-list>
